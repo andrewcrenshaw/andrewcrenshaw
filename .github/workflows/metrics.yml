@@ -1,0 +1,53 @@
+name: Metrics
+
+on:
+  # Daily at 00:00 UTC
+  schedule: [{ cron: "0 0 * * *" }]
+  # Manual run from the Actions tab (use this for the first run after the secret is set)
+  workflow_dispatch:
+
+# NOTE: no `push` trigger on purpose — avoids a re-run (and a failed run before the
+# METRICS_TOKEN secret exists) on every README edit.
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      # The built-in GITHUB_TOKEN (used as committer_token below) commits the SVG
+      # back to THIS public repo only. The read-only METRICS_TOKEN never needs write.
+      contents: write
+    steps:
+      # Pinned to the v3.34 commit SHA (not @latest) for supply-chain safety.
+      - uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6
+        with:
+          # Fine-grained, READ-ONLY PAT (Contents: Read + Metadata: Read).
+          # Used only to read/clone repos for stats — it has no write access anywhere.
+          token: ${{ secrets.METRICS_TOKEN }}
+          # Commit the generated SVG using the built-in token scoped to this repo only,
+          # so the metrics token can stay read-only.
+          committer_token: ${{ github.token }}
+
+          user: andrewcrenshaw
+          filename: github-metrics.svg
+          base: header, activity, community, repositories
+
+          # Clone + analyze private repos you can access (needed for lines-of-code).
+          base_indepth: yes
+
+          # --- Velocity & scope ---
+          # Year-long commit heatmap.
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          # Lines of code added/removed (requires base_indepth clone).
+          plugin_lines: yes
+
+          # Aggregate language breakdown across all accessible repos.
+          plugin_languages: yes
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 8
+          plugin_languages_ignored: >-
+            html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell
+
+          # Habits / "most productive hours" intentionally OMITTED to avoid
+          # publicly leaking your daily schedule and offline windows.
