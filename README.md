@@ -30,12 +30,3 @@ BS Physics · Behavioral Neuroscience · Fine & Applied Arts — University of O
 
 [andrewcrenshaw.dev](https://andrewcrenshaw.dev) · [LinkedIn](https://www.linkedin.com/in/andrewcrenshaw/)
 
----
-
-### Activity & Velocity
-
-<!-- Auto-generated daily by .github/workflows/metrics.yml — aggregate stats only; no private code, commit messages, or repo names are exposed. -->
-<picture>
-  <img src="./github-metrics.svg" alt="GitHub activity metrics — commit heatmap, lines of code, and language breakdown across public and private work">
-</picture>
-
