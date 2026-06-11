@@ -24,7 +24,7 @@ Most organizations experimenting with AI agents are running single-agent demos a
 - **Head of GTM Engineering, Macmillan Learning** (2013–2026) - Built GTM engineering from a team of one to 30+; owned the platform supporting ~$250M in annual revenue; CRM consolidation that enabled 5x revenue growth
 - **Executive Director, Morgan Stanley** (2002–2013) - P&L ownership on a $20M Fixed Income Global Sales technology program; AML/KYC transformation; consolidated 600+ reports into a unified Sales Desktop
 
-BS Physics · Behavioral Neuroscience · Fine & Applied Arts - University of Oregon (Magna Cum Laude)
+BS Fine and Applied Arts, concentrations in Astrophysics and Behavioral Neuroscience - University of Oregon, with Honors
 
 ---
 
