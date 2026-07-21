@@ -8,7 +8,7 @@ Most organizations experimenting with AI agents are running single-agent demos a
 
 ### What I'm Building
 
-**[Substrate-Lens-Frame (SLF)](https://lexenne.com/slf/)** - A governance layer for agent memory. Most of the field is racing on one axis: how accurately a system recalls the right fact. SLF addresses the part that decides whether that memory can be trusted with anything that matters - who is allowed to see a fact, how its meaning shifts by role and jurisdiction, and what each action disclosed. The protocol puts the access rules inside the fact, so they travel with it. Public so far: a position paper, [*The Governance Gap in Agentic Memory*](https://doi.org/10.5281/zenodo.20571518) (Zenodo, CC BY 4.0); [slf-core](https://github.com/andrewcrenshaw/slf) v0.1.0, an open reference implementation; and [SPA](https://github.com/andrewcrenshaw/SPA), a Rust prototype of a Sovereign Personal Agent that acts under it.
+**[Substrate-Lens-Frame (SLF)](https://lexenne.com/slf/)** - A governance layer for agent memory. Most of the field is racing on one axis: how accurately a system recalls the right fact. SLF addresses the part that decides whether that memory can be trusted with anything that matters - who is allowed to see a fact, how its meaning shifts by role and jurisdiction, and what each action disclosed. The protocol puts the access rules inside the fact, so they travel with it. Public so far: a position paper, [*The Governance Gap in Agentic Memory*](https://doi.org/10.5281/zenodo.20775891) (Zenodo, CC BY 4.0); [slf-core](https://github.com/andrewcrenshaw/slf) v0.1.0, an open reference implementation; and [SPA](https://github.com/andrewcrenshaw/SPA), a Rust prototype of a Sovereign Personal Agent that acts under it.
 
 **[Autogenous Synthesis Forge](https://andrewcrenshaw.dev/autogenous-synthesis/)** - An AI-first development OS. An autonomous orchestrator decomposes tickets, dispatches 10 specialist agents against machine-verifiable acceptance criteria, enforces TDD, and auto-revises on failure. Persistent scratchpads survive context limits; 150+ automated test suites turn quality into binary pass/fail. ~95% reduction in review load.
 
@@ -30,4 +30,4 @@ BS Fine and Applied Arts, concentrations in Astrophysics and Behavioral Neurosci
 
 ### Links
 
-[andrewcrenshaw.dev](https://andrewcrenshaw.dev) · [LinkedIn](https://www.linkedin.com/in/andrewcrenshaw/) · [SLF paper (Zenodo)](https://doi.org/10.5281/zenodo.20571518) · [lexenne.com/slf](https://lexenne.com/slf/)
+[andrewcrenshaw.dev](https://andrewcrenshaw.dev) · [LinkedIn](https://www.linkedin.com/in/andrewcrenshaw/) · [SLF paper (Zenodo)](https://doi.org/10.5281/zenodo.20775891) · [lexenne.com/slf](https://lexenne.com/slf/)
